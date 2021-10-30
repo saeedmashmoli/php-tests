@@ -1,0 +1,15 @@
+{
+    "name": "php-tests/php-quiz",
+    "description": "this library create for php questions",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Saeed Mashmoli",
+            "email": "saeedmashmoli1415@gmail.com"
+        }
+    ],
+    "autoload": {
+        "PhpQuiz\\" : "src/"
+    },
+    "require": {}
+}
