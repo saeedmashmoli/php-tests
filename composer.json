@@ -9,7 +9,9 @@
         }
     ],
     "autoload": {
-        "PhpQuiz\\" : "src/"
+        "psr-4": {
+            "PhpQuiz\\" : "src/"
+        }
     },
     "require": {}
 }
