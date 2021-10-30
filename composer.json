@@ -2,6 +2,7 @@
     "name": "php-tests/php-quiz",
     "description": "this library create for php questions",
     "type": "library",
+    "license": "MIT",
     "authors": [
         {
             "name": "Saeed Mashmoli",
