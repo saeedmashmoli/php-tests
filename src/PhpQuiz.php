@@ -74,4 +74,25 @@ class PhpQuiz
             return $res;
         }
     }
+    public static function holland($array) {
+        rsort($array);
+        $maxScore = count($array);
+        $countArrayVal = array_count_values($array);
+        $result = [];
+        foreach($countArrayVal as $key => $value){
+            if($value > 1){
+                $total = 0;
+                for($i = 1;$i <= $value; $i++){
+                    $total += $maxScore;
+                    $maxScore--;
+                }
+                $score = $total / $value;
+            }else{
+                $score = $maxScore;
+                $maxScore--;
+            }
+            $result[$key] = $score;
+        }
+        return $result;
+    }
 }
